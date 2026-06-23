@@ -825,13 +825,13 @@ a.product_img_link {
     height: 250px !important;
     overflow: hidden !important;
     background: #fff !important;
-    margin: 12px 0 -9px 0;
+    /* margin: 12px 0 -9px 0; */
 }
 
 a.product_img_link img {
-    /* width: 100% !important; */
+    width: 100% !important;
     height: 100% !important;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     object-position: center center !important;
 }
 
@@ -952,7 +952,7 @@ a.product-name {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     transition: color 0.3s ease !important;
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 
 .product-container:hover a.product-name {
@@ -2711,7 +2711,7 @@ html body .banner-title {
     }
     
     a.product_img_link {
-        height: 200px !important;
+        /* height: 200px !important; */
         /* Optimized for 3-column layout */
     }
     
