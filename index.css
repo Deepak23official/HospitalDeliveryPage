@@ -58,7 +58,7 @@ html {
     overflow-x: hidden;
 }
 center {
-    background-color: #FFF3EB !important;
+    /* background-color: #FFF3EB !important; */
     padding: 30px 0 !important;
 }
 body {
@@ -1464,7 +1464,7 @@ hr {
    SEO TAGS
    ═══════════════════════════════════════════════════════════════════ */
 .seotags {
-    background-color: var(--bg-luxury-2) !important;
+    /* background-color: var(--bg-luxury-2) !important; */
     border-top: 1px solid var(--border-soft) !important;
     padding: 40px 0 80px !important;
 }
