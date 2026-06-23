@@ -110,7 +110,7 @@ a:hover {
 .top-bar .container {
     display: flex !important;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 10px 32px !important;
     gap: 20px;
     flex-wrap: nowrap !important;
@@ -424,6 +424,7 @@ a:hover {
     letter-spacing: 1px !important;
     padding: 12px 17px !important;
     font-family: 'Poppins', sans-serif !important;
+    text-transform: capitalize !important;
 }
 
 .navbar-collapse ul .dropdown-menu {
@@ -796,7 +797,7 @@ a.btn[href*="nearbyfloristLocal"]:hover {
     flex-direction: column !important;
     /* height: 100% !important; */
     width: 276px !important;
-    height: 333px;
+    /* height: 333px; */
     position: relative !important;
 }
 
@@ -824,16 +825,17 @@ a.product_img_link {
     height: 250px !important;
     overflow: hidden !important;
     background: #fff !important;
+    margin: 12px 0 -9px 0;
 }
 
 a.product_img_link img {
-    width: 100% !important;
+    /* width: 100% !important; */
     height: 100% !important;
+    border-radius: 7px;
     object-position: center center !important;
 }
 
 .product-container:hover a.product_img_link img {
-    transform: scale(1.08) !important;
     transition: all 0.5s !important;
 }
 
@@ -950,6 +952,7 @@ a.product-name {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     transition: color 0.3s ease !important;
+    margin-top: 12px;
 }
 
 .product-container:hover a.product-name {
@@ -1414,6 +1417,7 @@ hr {
         flex-shrink: 0 !important;
         width: 34px !important;
         height: 34px !important;
+        margin-top: 0px !important;
     }
 
     .ViewCart {
@@ -1733,7 +1737,7 @@ hr {
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         display: block !important;
-        height: 1.4em !important;
+        height: 15px !important;
     }
 
     /* Prevent price wrapping to ensure horizontal alignment */
@@ -2185,7 +2189,7 @@ html body .banner-title {
 
     .products-it.cat-catalog {
         width: 50% !important;
-        padding: 6px !important;
+        padding: 3px !important;
         box-sizing: border-box !important;
     }
 
@@ -2199,10 +2203,11 @@ html body .banner-title {
         height: clamp(130px, 38vw, 165px) !important;
         overflow: hidden !important;
         background: #fff !important;
+        /* margin-top: 7px !important; */
     }
 
     a.product_img_link img {
-        width: 100% !important;
+        /* width: 100% !important; */
         height: 100% !important;
         /* object-fit: cover !important; */
         object-position: center top !important;
@@ -2218,7 +2223,7 @@ html body .banner-title {
     }
 
     .price.product-price {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 
 }
@@ -2321,7 +2326,7 @@ html body .banner-title {
     height: 100% !important;
     background: linear-gradient(135deg, #FFFFFF 0%, #FFF3EB 100%) !important;
     border: 1px solid rgba(122, 31, 61, 0.12) !important;
-    border-radius: 30px !important;
+    border-radius: 13px !important;
     /* Premium large border-radius */
     box-shadow: 0 15px 40px rgba(122, 31, 61, 0.08) !important;
     padding: 50px 40px !important;
@@ -2661,6 +2666,397 @@ html body .banner-title {
     }
 }
 
-.row:has(.sdd)::before {
+.row:has(.sdd)::before, .row:has(.sdd)::after {
     content: none !important;
+}
+/* ═══════════════════════════════════════════════════════════════════
+   TABLET RESPONSIVE STYLES (768px – 1024px)
+   
+   CRITICAL FIXES:
+   - Extends existing 768px-991px tablet rules to 1024px
+   - Adds proper padding/spacing for mid-range tablets
+   - Fixes product grid column transitions
+   - Improves section padding hierarchy
+   - Ensures navigation bar scales appropriately
+   - Adjusts button and form element sizing
+   ═══════════════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* ── HERO BANNER — Tablet Optimization ── */
+    .landing h1 {
+        font-size: 36px !important;
+        padding: 55px 70px !important;
+        min-height: 300px !important;
+        margin: 25px 0 45px !important;
+    }
+    
+    /* ── NAVIGATION — Tablet Padding Adjustment ── */
+    .topheader-navholder-rg .container {
+        padding: 0 28px !important;
+    }
+    
+    #navigation-menu>ul>li>a,
+    #navigation-menu>ul>li>a.drop-btn {
+        font-size: 13px !important;
+        padding: 18px 14px !important;
+        gap: 6px !important;
+    }
+    
+    /* ── PRODUCT GRID — 3 Column Layout on Tablet ── */
+    .products-it.cat-catalog {
+        width: 33.333% !important;
+        /* 3 columns on tablet */
+        padding: 12px !important;
+    }
+    
+    a.product_img_link {
+        height: 200px !important;
+        /* Optimized for 3-column layout */
+    }
+    
+    .product-container {
+        width: 100% !important;
+        /* Ensure full width within 33.333% column */
+    }
+    
+    .right-block {
+        padding: 12px 12px 14px !important;
+        /* Compact spacing for 3-column */
+    }
+    
+    a.product-name {
+        font-size: 14px !important;
+        /* Adjusted for 3-column layout */
+        margin-top: 8px;
+    }
+    
+    .price.product-price {
+        font-size: 12px !important;
+    }
+    
+    /* ── SECTION HEADINGS — Responsive Typography ── */
+    .heading-sec h2 {
+        font-size: clamp(18px, 3.5vw, 26px) !important;
+        margin: 40px 0 0 0 !important;
+        padding-bottom: 14px !important;
+    }
+    
+    .heading-sec {
+        margin-bottom: 32px !important;
+    }
+    
+    /* ── BUTTONS — Tablet Sizing ── */
+    .btn,
+    .btn-primary,
+    .btn-default,
+    #BackToShop,
+    .activate-btn,
+    .expandBtn,
+    input[type="button"],
+    button.shopNow {
+        font-size: 13px !important;
+        padding: 12px 26px !important;
+        margin-top: 35px !important;
+    }
+    
+    .btn-default,
+    .expandBtn,
+    .btn:not(.btn-primary):not(.shopNow):not(.activate-btn) {
+        margin-top: 0px !important;
+    }
+    
+    /* ── BREADCRUMB — Tablet Display ── */
+    .bread-crumb {
+        margin: 18px 0 -2px 0 !important;
+        display: flex !important;
+        white-space: nowrap !important;
+        overflow-x: auto !important;
+        max-width: 100% !important;
+        padding: 8px 0 !important;
+        margin: 15px 0 !important;
+    }
+    
+    .bread-crumb a,
+    .bread-crumb a:last-child {
+        font-size: 13px !important;
+    }
+    
+    /* ── SERVICES SECTION (QBC) — Tablet Refinement ── */
+    #FloristServicesDiv {
+        margin: 65px 0 !important;
+    }
+    
+    .qbc {
+        gap: 18px !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    .qbc>div {
+        flex: 1 1 33.333% !important;
+        max-width: 33.333% !important;
+        padding: 22px 24px !important;
+    }
+    
+    .qbc img {
+        width: 52px !important;
+        height: 52px !important;
+    }
+    
+    .qbc td a b span {
+        font-size: 19px !important;
+    }
+    
+    .qbc div:nth-child(1) td a b span,
+    .qbc div:nth-child(2) td a b span,
+    .qbc div:nth-child(3) td a b span {
+        font-size: 19px !important;
+    }
+    
+    .qbc div:nth-child(1) td a b::after,
+    .qbc div:nth-child(2) td a b::after,
+    .qbc div:nth-child(3) td a b::after {
+        font-size: 13px !important;
+    }
+    
+    /* ── MAP + SAME DAY DELIVERY SECTION ── */
+    .row:has(.sdd) {
+        gap: 26px !important;
+    }
+    
+    .row:has(.sdd)>div:first-child {
+        flex: 1.1 !important;
+        padding: 18px !important;
+    }
+    
+    .row:has(.sdd)>div:first-child p {
+        font-size: 16px !important;
+        margin-bottom: 18px !important;
+    }
+    
+    .row:has(.sdd) iframe {
+        height: 300px !important;
+    }
+    
+    .row:has(.sdd)>.container {
+        flex: 0.9 !important;
+    }
+    
+    .row:has(.sdd) .sdd {
+        padding: 45px 35px !important;
+    }
+    
+    .row:has(.sdd) .sdd img {
+        width: 100px !important;
+        height: 100px !important;
+        margin-bottom: 24px !important;
+    }
+    
+    .row:has(.sdd) .sdd p:nth-of-type(1) {
+        font-size: 22px !important;
+        margin-bottom: 14px !important;
+    }
+    
+    .row:has(.sdd) .sdd p:nth-of-type(2) {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* ── CONTENT SECTION (Text/Heading) ── */
+    .row:has(#FloristServicesDiv)+.row>div {
+        padding: 45px 40px !important;
+    }
+    
+    .row:has(#FloristServicesDiv)+.row h2 {
+        font-size: 24px !important;
+        margin: 40px 0 14px 0 !important;
+    }
+    
+    .row:has(#FloristServicesDiv)+.row h3 {
+        font-size: 22px !important;
+        margin: 32px 0 12px 0 !important;
+    }
+    
+    .row:has(#FloristServicesDiv)+.row p {
+        font-size: 15px !important;
+        line-height: 1.75 !important;
+        margin-bottom: 20px !important;
+    }
+    .qbc td {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .qbc td a b{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    /* ── FAQ SECTION ── */
+    .container.faqs {
+        margin: 55px 0 0 0 !important;
+        padding: 45px 40px !important;
+    }
+    
+    .container.faqs h2 {
+        font-size: 28px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .container.faqs>p {
+        font-size: 15px !important;
+        margin-bottom: 35px !important;
+    }
+    
+    .container.faqs .panel-title a {
+        font-size: 16px !important;
+        padding: 20px 24px !important;
+    }
+    
+    .container.faqs .panel-collapse>.panel-body {
+        padding: 0 24px 20px 24px !important;
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+    
+    .container.faqs .panel.panel-default {
+        margin-bottom: 14px !important;
+    }
+    
+    /* ── SEO TAGS SECTION ── */
+    .seotags {
+        padding: 36px 0 70px !important;
+    }
+    
+    .seotagsSub {
+        padding: 0 30px !important;
+    }
+    
+    .seotagsSub h4 {
+        font-size: 18px !important;
+        margin-bottom: 18px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    .seotags a {
+        font-size: 14px !important;
+        margin: 5px 18px 5px 0 !important;
+    }
+    
+    /* ── BACK TO TOP BUTTON ── */
+    .go-up {
+        bottom: 25px !important;
+        right: 25px !important;
+    }
+    
+    .go-up a {
+        width: 46px !important;
+        height: 46px !important;
+    }
+    
+    /* ── TOP BAR ── */
+    .top-bar .container {
+        padding: 10px 28px !important;
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+    
+    .top-bar .container>.col-md-7 p,
+    .top-bar .container>.col-md-7 a {
+        font-size: 12px !important;
+    }
+    
+    .ViewCart a,
+    #BtnCart {
+        padding: 6px 14px !important;
+        font-size: 11px !important;
+        gap: 6px !important;
+    }
+    
+    .input-group {
+        max-width: 240px !important;
+    }
+    
+    #txtSearch {
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+    }
+    
+    #BtnSearch {
+        width: 38px !important;
+    }
+    
+    /* ── COUNTDOWN TIMER — Tablet ── */
+    #timer {
+        padding: 11px 16px !important;
+    }
+    
+    #countdown-timer {
+        max-width: 680px !important;
+        border-radius: 18px !important;
+    }
+    
+    #Timer-innerDiv {
+        gap: 18px !important;
+        padding: 6px 14px !important;
+    }
+    
+    #Timer-innerDiv b {
+        font-size: 17px !important;
+    }
+    
+    #Timer-innerDiv b span {
+        font-size: 10px !important;
+    }
+    
+    .cut-off-deal table td.timeron {
+        min-width: 56px !important;
+        padding: 5px 16px !important;
+    }
+    
+    .cut-off-deal table td.timeron p,
+    .cut-off-hr,
+    .cut-off-min,
+    .cut-off-sec {
+        font-size: 24px !important;
+        min-width: 48px !important;
+        min-height: 42px !important;
+        padding: 6px 12px !important;
+        border-radius: 9px !important;
+    }
+    
+    .timerdesp {
+        font-size: 9px !important;
+    }
+    
+    /* ── DELIVERY AREA BOX — Tablet ── */
+    .row[style*="margin-top:5%"]>div.col-sm-12.col-md-5 {
+        margin-bottom: 20px !important;
+        padding: 20px 20px !important;
+    }
+    
+    .row[style*="margin-top:5%"]>div.col-sm-12.col-md-7 {
+        padding: 20px !important;
+    }
+    
+    .row[style*="margin-top:5%"] iframe {
+        height: 280px !important;
+    }
+    
+    /* ── FOOTER — Tablet Adjustments ── */
+    .footer-center .container {
+        padding: 0 28px !important;
+    }
+    
+    /* ── INNER CONTAINER — Tablet Padding ── */
+    .container.inner-contianer {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .col-sm-6:has(.ViewCart) {
+        width: unset !important;
+    }
+    
 }
