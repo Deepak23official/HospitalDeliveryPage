@@ -2660,6 +2660,17 @@ html body .banner-title {
     gap: 16px !important;
     flex-wrap: nowrap !important;
   }
+  .qbc td {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .qbc td a b{
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
 
   .qbc > div {
     flex: 1 1 33.333% !important;
