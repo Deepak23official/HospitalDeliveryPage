@@ -761,7 +761,7 @@ a.btn[href*="nearbyfloristLocal"]:hover {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center;
-    /* width: 25% !important; */
+    width: 25% !important;
     /* 4 columns on Desktop */
     padding: 10px !important;
     box-sizing: border-box !important;
