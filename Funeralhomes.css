@@ -57,23 +57,17 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-center {
-    /* background-color: #FFF3EB !important; */
-    padding: 30px 0 !important;
-}
+
 body {
-    background: var(--bg-gallery-white) !important;
+    /* background: var(--bg-gallery-white) !important; */
     color: var(--text-dark) !important;
     font-family: var(--ff-body) !important;
     font-weight: 300 !important;
     line-height: 1.75 !important;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    padding-bottom: 30px !important;
 }
-.footer-powered-by{
-    margin: 0px !important;
-}
+
 img {
     max-width: 100%;
     display: block;
@@ -82,363 +76,14 @@ img {
 a {
     text-decoration: none !important;
     transition: var(--transition);
-    color: var(--primary-dark);
+    /* color: var(--primary-dark); */
 }
 
 a:hover {
     color: var(--accent-rose);
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   TOP BAR (UNTOUCHED)
-   ═══════════════════════════════════════════════════════════════════ */
-#top-header {
-    position: relative !important;
-    z-index: 900;
-}
-
-.top-bar {
-    background: #7A1F3D !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-    padding: 0 !important;
-}
-
-.top-bar .container {
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 32px !important;
-    gap: 20px;
-    flex-wrap: nowrap !important;
-    margin: 0 auto;
-}
-
-.top-bar .container>.col-md-7 p,
-.top-bar .container>.col-md-7 a {
-    font-size: 11.5px !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.06em;
-    color: rgba(255, 255, 255, 0.55) !important;
-    margin: 0 !important;
-    white-space: nowrap;
-}
-
-.top-bar .container>.col-md-7 a {
-    color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.top-bar .container>.col-md-7 a:hover {
-    color: #F5EDE8 !important;
-}
-
-#txtSearch {
-    background: rgba(255, 255, 255, 0.07) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-right: none !important;
-    border-radius: var(--radius-input) 0 0 var(--radius-input) !important;
-    color: #fff !important;
-    font-size: 12px !important;
-    font-weight: 300 !important;
-    padding: 7px 14px !important;
-    height: 34px !important;
-    outline: none !important;
-    transition: var(--transition);
-}
-
-#txtSearch::placeholder {
-    color: rgba(255, 255, 255, 0.35) !important;
-}
-
-#txtSearch:focus {
-    background: rgba(255, 255, 255, 0.12) !important;
-    border-color: rgba(194, 24, 91, 0.6) !important;
-}
-
-#BtnSearch {
-    background: #C2185B !important;
-    border: none !important;
-    border-radius: 0 var(--radius-input) var(--radius-input) 0 !important;
-    color: #fff !important;
-    height: 34px !important;
-    width: 36px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    transition: var(--transition);
-    margin-top: 0px !important;
-}
-
-#BtnSearch:hover {
-    background: #7A1F3D !important;
-}
-
-.input-group {
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.ViewCart {
-    position: relative !important;
-    display: flex !important;
-    align-items: center;
-}
-
-.ViewCart a,
-#BtnCart {
-    display: flex !important;
-    align-items: center;
-    gap: 7px;
-    font-size: 11.5px !important;
-    font-weight: 500 !important;
-    letter-spacing: 0.08em !important;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7) !important;
-    white-space: nowrap;
-    padding: 6px 16px !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: var(--radius-button) !important;
-    transition: var(--transition);
-}
-
-.ViewCart a:hover,
-#BtnCart:hover {
-    background: rgba(255, 255, 255, 0.08) !important;
-    color: #fff !important;
-    border-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-.ViewCart .fa,
-#BtnCart .fa {
-    color: #C2185B !important;
-    font-size: 15px !important;
-}
-
-#BtnCart {
-    justify-content: center !important;
-}
-
-#BtnCart span {
-    border: none !important;
-    font-size: 10px !important;
-    color: white !important;
-    padding-bottom: 0 !important;
-    text-transform: capitalize !important;
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   NAVIGATION BAR (UNTOUCHED)
-   ═══════════════════════════════════════════════════════════════════ */
-.topheader-navholder {
-    background: #ffffff !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06) !important;
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 800 !important;
-    transition: box-shadow 0.3s ease !important;
-}
-
-.topheader-navholder.sticky-active {
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10) !important;
-}
-
-.topheader-navholder-rg .container {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 0 40px !important;
-    max-width: 1320px !important;
-    margin: 0 auto !important;
-}
-
-.logo {
-    display: none !important;
-}
-
-.topheader-navholder-rg .col-md-3 {
-    display: none !important;
-}
-
-.topheader-navholder-rg .col-md-9 {
-    display: flex !important;
-    justify-content: center !important;
-}
-
-#ShopLogo {
-    height: 48px !important;
-    width: auto !important;
-    object-fit: contain !important;
-}
-
-#ShopLogo:hover {
-    opacity: 0.75 !important;
-}
-
-#MenuList {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-#navigation-menu>ul.nav {
-    display: flex !important;
-    align-items: center !important;
-    float: none !important;
-    flex-wrap: nowrap !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-}
-
-#navigation-menu>ul>li {
-    display: flex !important;
-    align-items: center !important;
-    position: relative !important;
-}
-
-#navigation-menu>ul>li>a,
-#navigation-menu>ul>li>a.drop-btn {
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    letter-spacing: 1px !important;
-    color: #1a1a1a !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 5px !important;
-    position: relative !important;
-    transition: color 0.22s ease !important;
-    white-space: nowrap !important;
-    text-decoration: none !important;
-    margin: 0 !important;
-    font-style: normal;
-}
-
-#navigation-menu>ul>li>a .fa-angle-down {
-    font-size: 10px !important;
-    opacity: 0.55 !important;
-    transition: transform 0.25s ease !important;
-}
-
-#navigation-menu>ul>li:hover>a .fa-angle-down {
-    transform: rotate(180deg) !important;
-    opacity: 0.8 !important;
-}
-
-#navigation-menu .dropdown-menu,
-.dropdown-menu {
-    background: #ffffff !important;
-    border: none !important;
-    border-radius: var(--radius-dropdown) !important;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.13), 0 2px 10px rgba(0, 0, 0, 0.07) !important;
-    min-width: 220px !important;
-    padding: 10px 0 !important;
-    overflow: hidden !important;
-    top: 100% !important;
-    left: 0 !important;
-    animation: dropFadeIn 0.18s ease !important;
-}
-
-.dropdown-menu li,
-.dropdown-menu div {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-}
-
-.dropdown-menu li a,
-.dropdown-menu div li a {
-    font-weight: 600 !important;
-    color: #2a2a2a !important;
-    padding: 11px 18px !important;
-    display: block !important;
-    border-radius: var(--radius-button) !important;
-    transition: all 0.5s ease !important;
-    text-decoration: none !important;
-    line-height: 1.4 !important;
-}
-
-.dropdown-menu li a:hover,
-.dropdown-menu div li a:hover,
-.dropdown-menu li.active>a,
-.dropdown-menu li.current>a {
-    background: rgba(194, 24, 91, 0.85) !important;
-    color: #ffffff !important;
-}
-
-#MenuList.sticky,
-#MobileMenu.sticky {
-    position: fixed !important;
-    top: 0 !important;
-    width: 100% !important;
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-    box-shadow: 0 8px 40px rgba(122, 31, 61, 0.12) !important;
-    z-index: 1000 !important;
-    padding: 5px 0 !important;
-}
-
-.sticky .megamenu {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-#MobileMenu .navbar-default {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-#MobileMenu .navbar-default .navbar-toggle {
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: var(--radius-button) !important;
-    padding: 7px 10px !important;
-    background: transparent !important;
-}
-
-#MobileMenu .navbar-default .navbar-toggle .icon-bar {
-    background: var(--primary-dark) !important;
-    width: 18px !important;
-    height: 1.5px !important;
-}
-
-#MobileMenuTemplate .navbar-collapse {
-    background: #7A1F3D !important;
-    box-shadow: 0 16px 64px rgba(122, 31, 61, 0.16) !important;
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 8px 0 !important;
-}
-
-.navbar-collapse ul li a {
-    font-size: 13px !important;
-    font-weight: 400 !important;
-    letter-spacing: 1px !important;
-    padding: 12px 17px !important;
-    font-family: 'Poppins', sans-serif !important;
-}
-
-.navbar-collapse ul .dropdown-menu {
-    background: rgba(255, 255, 255, 0.04) !important;
-    border: none !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-}
-
-.custom-dropdown li {
-    border: none !important;
-}
-
-.navbar-collapse ul .dropdown-menu li a {
-    padding: 5px 32px !important;
-}
-
+/* 
 /* ═══════════════════════════════════════════════════════════════════
    BREADCRUMB
    ═══════════════════════════════════════════════════════════════════ */
@@ -628,7 +273,7 @@ a:hover {
    ═══════════════════════════════════════════════════════════════════ */
 .heading-sec {
     text-align: center !important;
-    /* margin-bottom: 35px !important; */
+    margin-bottom: 35px !important;
 }
 
 .heading-sec h2 {
@@ -640,7 +285,6 @@ a:hover {
     display: inline-block !important;
     position: relative !important;
     padding-bottom: 12px !important;
-    /* margin: 47px 0 0 0 !important; */
 }
 
 .heading-sec h2::after {
@@ -657,9 +301,7 @@ a:hover {
 /* ═══════════════════════════════════════════════════════════════════
    BUTTONS & CTAs
    ═══════════════════════════════════════════════════════════════════ */
-.btn,
 .btn-primary,
-.btn-default,
 #BackToShop,
 .activate-btn,
 .expandBtn,
@@ -701,16 +343,7 @@ button.shopNow:hover,
     box-shadow: var(--shadow-lux-md) !important;
 }
 
-.btn-default,
-.expandBtn,
-.btn:not(.btn-primary):not(.shopNow):not(.activate-btn) {
-    background: transparent !important;
-    color: var(--primary-dark) !important;
-    border: 1px solid var(--primary-dark) !important;
-    margin-top: -20px !important;
-}
 
-.btn-default:hover,
 .expandBtn:hover,
 .btn:not(.btn-primary):not(.shopNow):not(.activate-btn):hover {
     background: var(--primary-hover) !important;
@@ -964,7 +597,6 @@ a.product-name {
 .row[style*="margin-top:5%"] {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 30px;
     margin-top: 60px !important;
     margin-bottom: 60px !important;
 }
@@ -1444,9 +1076,9 @@ a.product-name {
 }
 
 /* Hide HR separator under first heading to ensure matching visual flow */
-.col-sm-12:has(.expandable-Div) hr {
+/* .col-sm-12:has(.expandable-Div) hr {
     display: none !important;
-}
+} */
 
 .delivery-areabox {
     padding: 0 !important;
@@ -1457,54 +1089,7 @@ a.product-name {
 
 /* HR line clean styling */
 hr {
-    border: none !important;
     margin: 0 0 15px 0 !important;
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   SEO TAGS
-   ═══════════════════════════════════════════════════════════════════ */
-.seotags {
-    /* background-color: var(--bg-luxury-2) !important; */
-    border-top: 1px solid var(--border-soft) !important;
-    padding: 40px 0 80px !important;
-}
-
-.seotagsSub {
-    margin: 0 auto !important;
-    max-width: 1200px !important;
-}
-
-.seotagsSub h4 {
-    font-family: var(--ff-serif) !important;
-    font-size: 20px !important;
-    text-transform: capitalize !important;
-    font-weight: 500 !important;
-    color: var(--primary-dark) !important;
-    border-bottom: 1px solid var(--border-soft) !important;
-    padding-bottom: 12px !important;
-    margin-bottom: 20px !important;
-}
-
-.seotags a {
-    font-family: var(--ff-body) !important;
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    color: #000000 !important;
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 6px 20px 6px 0 !important;
-    display: inline-block !important;
-    text-decoration: underline !important;
-    text-underline-offset: 4px !important;
-    text-decoration-color: rgb(0 0 0 / 40%) !important;
-    transition: var(--transition) !important;
-}
-
-.seotags a:hover {
-    color: var(--primary-hover) !important;
-    text-decoration-color: var(--primary-hover) !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -1667,117 +1252,6 @@ hr {
    ═══════════════════════════════════════════════════════════════════ */
 @media (max-width: 767px) {
 
-    /* Top Bar stacks dynamically */
-    .top-bar .container {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 10px 16px !important;
-        gap: 10px !important;
-        flex-wrap: wrap !important;
-        width: 100% !important;
-        overflow: hidden !important;
-    }
-
-    .top-bar .container>.col-md-7 {
-        width: 100% !important;
-        text-align: center !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    .top-bar .container>.col-md-7 p,
-    .top-bar .container>.col-md-7 a {
-        white-space: normal !important;
-        font-size: 11px !important;
-        display: inline !important;
-    }
-
-    .top-bar .container>.col-md-5,
-    .top-bar .container>div:last-child {
-        width: 100% !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 8px !important;
-        flex-wrap: nowrap !important;
-    }
-
-    .input-group {
-        flex: 1 1 auto !important;
-        max-width: 220px !important;
-        min-width: 0 !important;
-    }
-
-    #txtSearch {
-        flex: 1 1 auto !important;
-        min-width: 0 !important;
-        width: 100% !important;
-        font-size: 12px !important;
-        padding: 7px 10px !important;
-        height: 34px !important;
-    }
-
-    #BtnSearch {
-        flex-shrink: 0 !important;
-        width: 34px !important;
-        height: 34px !important;
-    }
-
-    .ViewCart {
-        flex-shrink: 0 !important;
-    }
-
-    .ViewCart a,
-    #BtnCart {
-        padding: 6px 10px !important;
-        font-size: 11px !important;
-        gap: 5px !important;
-    }
-
-    /* Navigation */
-    .topheader-navholder-rg .container {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    .topheader-navholder-rg .col-md-9 {
-        width: 100% !important;
-        padding: 0 !important;
-    }
-
-    #navigation-menu>ul.nav {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
-
-    #navigation-menu>ul>li>a,
-    #navigation-menu>ul>li>a.drop-btn {
-        font-size: 12px !important;
-        padding: 14px 10px !important;
-        letter-spacing: 0.5px !important;
-    }
-
-    .navbar-collapse ul li a {
-        padding: 9px 17px !important;
-    }
-
-    body .navbar-collapse ul .dropdown-menu li a {
-        color: white !important;
-        padding: 5px 17px !important;
-    }
-
-    .navbar-brand {
-        color: var(--primary-dark) !important;
-    }
-
-    #MobileMenu {
-        width: 100% !important;
-    }
-
-    .navbar-nav {
-        margin: 0px !important;
-    }
 
     /* Hero Banner Mobile */
     h1 {
@@ -1880,44 +1354,6 @@ hr {
         padding: 20px 24px !important;
     }
 
-    /* Footer layout adjustment */
-    .footer-center .container {
-        padding: 0 16px !important;
-    }
-    .footer-center .container {
-        max-width: 100% !important;
-    }
-
-    .footer-center .row:first-child {
-        flex-direction: column !important;
-        gap: 15px !important;
-    }
-
-    .footer-center .row:first-child>[class*="col-"] {
-        flex: none !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 24px 20px !important;
-        border-radius: var(--radius-section) !important;
-    }
-
-    .footer-center .social_block {
-        padding: 20px !important;
-        border-radius: var(--radius-section) !important;
-    }
-
-    .ct-icon {
-        justify-content: center !important;
-        gap: 8px !important;
-    }
-
-    .footer-copyright {
-        padding: 16px 0  !important;
-    }
-
-    .footer-copyright .container {
-        padding: 0 16px !important;
-    }
 
     /* Timer Mobile */
     #timer {
@@ -2023,15 +1459,6 @@ hr {
         line-height: 1.4 !important;
     }
 
-    h4,
-    .footer-center h4,
-    .footer-center h3,
-    #PromoProducts h4,
-    .seotagsSub h4 {
-        font-size: clamp(13px, 3.5vw, 16px) !important;
-        line-height: 1.4 !important;
-    }
-
     /* Keep product titles strictly on one line with ellipsis for alignment */
     a.product-name,
     .cat-catalog .product-name {
@@ -2052,15 +1479,12 @@ hr {
     p,
     .top-bar .container p,
     .top-bar .container p a,
-    .row[style*="margin-top:5%"] .col-md-7 p,
-    .footer-powered-by {
+    .row[style*="margin-top:5%"] .col-md-7 p{
         font-size: clamp(14px, 3.2vw, 13.5px) !important;
         line-height: 1.5 !important;
     }
 
-    .btn,
     .btn-primary,
-    .btn-default,
     #BackToShop,
     .activate-btn,
     .expandBtn,
@@ -2068,15 +1492,6 @@ hr {
     input[type="button"],
     a.btn[href*="nearbyfloristLocal"] {
         font-size: clamp(10px, 3vw, 12px) !important;
-    }
-
-    .footer-center span,
-    .footer-center td,
-    .footer-center li,
-    .footer-center a,
-    .footer-copyright,
-    .footer-copyright a {
-        font-size: clamp(11px, 3.2vw, 13px) !important;
     }
 
     .bread-crumb a,
@@ -2133,70 +1548,13 @@ html body .banner-title {
     font-size: 9px !important;
 }
 
-/* ── FOOTER COLOR CUSTOMIZATION ── */
-#footer,
-.ht-footer,
-.footer-center,
-#vp_footer {
-    background: #7A1F3D !important;
-    /* Deep Burgundy */
-    color: #FFF8F3 !important;
-    /* Soft cream text */
-}
 
-.footer-center h4,
-.footer-center h3,
-.footer-center b,
-.footer-center strong {
-    color: #F4B6C2 !important;
-    /* Accent blush for footer headers */
-}
-
-.footer-center p,
-.footer-center span,
-.footer-center td,
-.footer-center li,
-.footer-center a {
-    color: #FFF8F3 !important;
-    /* Soft cream text for links and lists */
-}
-
-.footer-center a:hover {
-    color: #F4B6C2 !important;
-    /* Hover accent color */
-}
-
-.footer-copyright {
-    background: #5C1A33 !important;
-    /* Rich Plum for copyright bar */
-    border-top: 1px solid rgba(244, 182, 194, 0.15) !important;
-    /* Soft blush divider */
-    color: rgba(255, 248, 243, 0.6) !important;
-}
-
-.footer-copyright a {
-    color: rgba(255, 248, 243, 0.8) !important;
-}
-
-.footer-copyright a:hover {
-    color: #F4B6C2 !important;
-}
-
-.footer-powered-by {
-    color: var(--primary-dark) !important;
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   COUNTDOWN TIMER — Flash Sale Banner Style
-   ═══════════════════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;700&display=swap');
 
 /* ═══════════════════════════════════════════════════════════════════
    COUNTDOWN TIMER — Final Fixed CSS
    ═══════════════════════════════════════════════════════════════════ */
-
-/* ── Outer wrapper — fixed bottom bar ── */
 #timer {
     padding: 12px 20px !important;
     position: fixed !important;
@@ -2214,7 +1572,7 @@ html body .banner-title {
     background: rgb(122, 31, 61) !important;
     padding: 0 !important;
     border-radius: 20px !important;
-    max-width: 693px !important;
+    max-width: 518px !important;
     width: 100% !important;
     margin: 0 auto !important;
     position: relative !important;
@@ -2279,6 +1637,7 @@ html body .banner-title {
     padding: 0 !important;
     float: none !important;
     flex: 0 0 auto !important;
+    width: auto !important;
 }
 
 /* ── Timer table container ── */
@@ -2305,7 +1664,7 @@ html body .banner-title {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 6px 20px !important;
+    /* padding: 6px 20px !important; */
     text-align: center !important;
     border: none !important;
     min-width: 64px !important;
@@ -2339,7 +1698,6 @@ html body .banner-title {
     text-transform: uppercase !important;
     color: rgba(255, 255, 255, 0.45) !important;
     display: block !important;
-    /* margin-top: 6px !important; */
     text-align: center !important;
     white-space: nowrap !important;
 }
@@ -2351,7 +1709,6 @@ html body .banner-title {
     justify-content: center !important;
     padding: 0 4px !important;
     vertical-align: middle !important;
-    /* Offset down to align with number center, above the label */
     padding-bottom: 22px !important;
 }
 
@@ -2363,9 +1720,7 @@ html body .banner-title {
     padding: 0 !important;
     line-height: 1 !important;
 }
-#footer .block .title_block {
-    font-style: normal !important;
-}
+
 /* ═══════════════════════════════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════════════════════════════ */
@@ -2377,7 +1732,6 @@ html body .banner-title {
     }
 
     #Timer-innerDiv {
-        /* padding: 12px 28px !important; */
         gap: 16px !important;
         padding: 0px !important;
     }
@@ -2387,7 +1741,6 @@ html body .banner-title {
     }
 
     .cut-off-deal table td.timeron {
-        /* padding: 6px 14px !important; */
         min-width: 52px !important;
     }
 
@@ -2482,7 +1835,7 @@ html body .banner-title {
         font-size: 20px !important;
     }
     .heading-sec .btn{
-        /* margin-bottom: -39px !important; */
+        margin-bottom: -39px !important;
     }
      #BindProductImages.row {
         display: flex !important;
@@ -2512,7 +1865,6 @@ html body .banner-title {
     a.product_img_link img {
         width: 100% !important;
         height: 100% !important;
-        /* object-fit: cover !important; */
         object-position: center top !important;
         transform: none !important;
     }
@@ -2536,7 +1888,6 @@ html body .banner-title {
 @media (max-width: 420px) {
 
     .cut-off-deal table td.timeron {
-        /* padding: 4px 8px !important; */
         min-width: 38px !important;
     }
 
@@ -2562,20 +1913,12 @@ html body .banner-title {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  /* ─── PRODUCT GRID: 3 cards per row ─────────────────────────────
-     Your existing tablet rule sets 50% (2 per row). Override to
-     33.333% so exactly 3 cards fill the row. The outer row uses
-     negative margins of -15px each side, so calc accounts for that. */
   .products-it.cat-catalog {
     width: 33.333% !important;
     padding: 10px !important;
     box-sizing: border-box !important;
   }
 
-  /* ─── PRODUCT CONTAINER: uniform width/height ───────────────────
-     Fixed width: 276px was set for desktop. On tablet the card must
-     flex to fill its 33% column, so reset to 100% width and auto
-     height so all cards stretch equally within their flex column. */
   .product-container {
     width: 100% !important;
     height: auto !important;
@@ -2584,25 +1927,17 @@ html body .banner-title {
     flex-direction: column !important;
   }
 
-  /* ─── PRODUCT IMAGE: consistent aspect ratio ─────────────────────
-     Desktop uses 250px; mobile uses 130px. At ~33% tablet column
-     width (~220-270px wide), 180px image height keeps a natural
-     proportion without stretching. object-fit: cover prevents
-     distortion while filling the area. */
   a.product_img_link {
-    height: 180px !important;
+    /* height: 180px !important; */
     flex-shrink: 0 !important;
   }
 
   a.product_img_link img {
-    object-fit: cover !important;
+    /* object-fit: cover !important; */
     object-position: center center !important;
   }
 
-  /* ─── RIGHT BLOCK: consistent title/price alignment ─────────────
-     flex: 1 makes the text block stretch to fill remaining card
-     height, so titles and prices land at the same vertical position
-     across all cards in a row. */
+ 
   .right-block {
     flex: 1 !important;
     display: flex !important;
@@ -2611,9 +1946,6 @@ html body .banner-title {
     padding: 12px 14px 14px !important;
   }
 
-  /* ─── PRODUCT NAME: prevent overflow on narrower cards ──────────
-     At 33% width the card is narrower than desktop. Ellipsis keeps
-     all names on one line without breaking the grid alignment. */
   a.product-name {
     font-size: 15px !important;
     white-space: nowrap !important;
@@ -2626,9 +1958,6 @@ html body .banner-title {
     white-space: nowrap !important;
   }
 
-  /* ─── TOP BAR: reduce horizontal padding ────────────────────────
-     At 768-1024px the top bar container needs tighter padding to
-     prevent content overflow while keeping the flex row intact. */
   .top-bar .container {
     padding: 10px 28px !important;
     flex-direction: column;
@@ -2638,25 +1967,19 @@ html body .banner-title {
   .col-sm-6:has(.ViewCart) {
     width: unset !important;
   }
-  /* ─── NAV: tighten horizontal padding ───────────────────────────
-     Desktop uses 40px. Tablets need less so nav links don't wrap. */
+
   .topheader-navholder-rg .container {
     padding: 0 20px !important;
   }
 
-  /* ─── HERO BANNER: tablet font/padding ──────────────────────────
-     Desktop: 42px / 60px 80px padding. Mobile: 14px. The existing
-     991px breakpoint sets 34px which applies here too, but we need
-     min-height scaled for tablet viewport proportions. */
+ 
   .landing h1 {
     font-size: 30px !important;
     padding: 48px 52px !important;
     min-height: 240px !important;
   }
 
-  /* ─── SERVICES ROW (qbc): maintain 3-column flex ────────────────
-     The .qbc row should stay nowrap 3-column on tablet but with
-     reduced padding to avoid overflow at narrower viewport widths. */
+ 
   .qbc {
     gap: 16px !important;
     flex-wrap: nowrap !important;
@@ -2686,13 +2009,11 @@ html body .banner-title {
     font-size: 17px !important;
   }
 
-  /* ─── MAP / ADDRESS SECTION: stack columns on narrow tablets ────
-     At 768-900px the col-md-5 + col-md-7 side-by-side becomes very
-     cramped. Stack them vertically and give each full width. Above
-     ~900px they can sit side by side comfortably. */
+ 
   @media (max-width: 900px) {
     .row[style*="margin-top:5%"] {
       flex-direction: column !important;
+      gap: 20px !important;
     }
 
     .row[style*="margin-top:5%"] .col-md-5,
@@ -2707,48 +2028,32 @@ html body .banner-title {
     }
   }
 
-  /* ─── HOSPITAL / DELIVERY AREAS GRID: keep 2 columns ────────────
-     The existing 991px rule already sets 2 columns, which is correct
-     for this range too. Explicitly re-declare to ensure it holds
-     across the full 768-1024px span. */
+ 
   .expandable-Div,
   .delivery-areabox-wrap {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 0 28px !important;
   }
 
-  /* ─── BREADCRUMB: comfortable margin ────────────────────────────
-     Resets the breadcrumb margin for tablet to sit cleanly above
-     the hero without the mobile overflow-x scroll behaviour. */
+ 
   .bread-crumb {
     margin: 18px 0 -4px 0 !important;
     overflow-x: visible !important;
   }
 
-  /* ─── CONTAINER INNER: horizontal padding for tablet ────────────
-     Prevents content from touching viewport edges on smaller tablets. */
   .container.inner-contianer {
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
 
-  /* ─── COUNTDOWN TIMER: scale for tablet ─────────────────────────
-     Tablet width allows a wider timer than mobile but should be
-     constrained so it doesn't span the full viewport awkwardly. */
   #countdown-timer {
-    max-width: 620px !important;
+    max-width: 450px !important;
   }
 
   #Timer-innerDiv b {
     font-size: 17px !important;
   }
-
-  /* ─── BACK-TO-TOP: offset for fixed timer bar ───────────────────
-     Ensures the go-up button doesn't sit behind the fixed timer. */
   .go-up {
     bottom: 90px !important;
   }
 }
-  .row[style*="margin-top:5%"]::after{
-    content: none !important;
-  }
