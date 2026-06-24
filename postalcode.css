@@ -1835,7 +1835,7 @@ html body .banner-title {
         font-size: 20px !important;
     }
     .heading-sec .btn{
-        margin-bottom: -39px !important;
+        /* margin-bottom: -39px !important; */
     }
      #BindProductImages.row {
         display: flex !important;
