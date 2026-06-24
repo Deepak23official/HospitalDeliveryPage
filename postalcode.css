@@ -262,7 +262,7 @@ a:hover {
     .landing h1 {
         font-size: 14px !important;
         padding: 40px 30px !important;
-        min-height: 180px !important;
+        min-height: max-content !important;
         margin: 15px 0 30px !important;
         border-radius: var(--radius-section) !important;
     }
